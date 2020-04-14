@@ -20,6 +20,7 @@ Synopsis
     git secrets --add [-a|--allowed] [-l|--literal] [--global] <pattern>
     git secrets --add-provider [--global] <command> [arguments...]
     git secrets --register-aws [--global]
+    git secrets --register-gcp [--global]
     git secrets --aws-provider [<credentials-file>]
 
 
@@ -32,6 +33,15 @@ commit message, or any commit in a ``--no-ff`` merge history matches one of
 your configured prohibited regular expression patterns, then the commit is
 rejected.
 
+
+Cloudbakers Instructions
+----------------------
+* Cloudbakers asks that you install `git-secrets` on your platfrom of choice
+* Cloudbakers asks that you install it globally for all repositories
+* Steps
+* `git clone https://github.com/Cloudbakers/git-secrets`
+* Run your OS specific commands
+* Once installed, run `git secrets --register-gcp --global`
 
 Installing git-secrets
 ----------------------
@@ -57,15 +67,6 @@ to an installation directory (``%USERPROFILE%/.git-secrets`` by default) and add
 the directory to the current user ``PATH``.
 
 ::
-
-    PS > ./install.ps1
-
-Homebrew (for macOS users)
-~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-::
-
-    brew install git-secrets
 
 .. warning::
 
